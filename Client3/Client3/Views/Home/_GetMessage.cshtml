@@ -1,0 +1,107 @@
+﻿@using BusinessLogic.DTO;
+@model MessagesViewModel;
+
+<div class="text-center">
+    <h3 style="text-align: center;">Сообщения от клиента #1</h3>
+</div>
+
+<div class="text-center">
+    <table style='width:1295px; '>
+        <thead >
+            <tr >
+                <th style="width:10%">
+                    @Html.DisplayNameFor(model => model.Messages[0].Id)
+                </th >
+                <th style="width:10%">
+                    @Html.DisplayNameFor(model => model.Messages[0].Number)
+                </th>
+                <th style="width:20%">
+                    @Html.DisplayNameFor(model => model.Messages[0].ArrivalTime)
+                </th>
+                <th style="width:60%">
+                    @Html.DisplayNameFor(model => model.Messages[0].Kontent)
+                </th>
+            </tr>
+        </thead>
+        <tbody id="tblBody">
+            @foreach (var b in Model.Messages)
+            {
+                <tr >
+                    <td style="width:10%">
+                        @Html.DisplayFor(modelItem => b.Id)
+                    </td>
+                    <td style="width:10%">
+                        @Html.DisplayFor(modelItem => b.Number)
+                    </td>
+                    <td style="width:20%">
+                        @Html.DisplayFor(modelItem => b.ArrivalTime)
+                    </td>
+                    <td style="width:60%;">
+                        <span style="display: flex;max-width: 750px;overflow: hidden;">
+                        @Html.DisplayFor(modelItem => b.Kontent)
+                        </span>
+                    </td>
+                </tr>
+            }
+        </tbody>
+        <tfoot id="tblFoot" style='width:1295px;display: table;'>
+            <tr>
+                <td style='width: 100px;'>Всего сообщений:  @Model.Messages.Count</td>
+            </tr>
+        </tfoot>
+    </table>
+    <div class="text-center" style="text-align:center">
+        <button id="btnReload" type="button" class="btn btn-success"
+                style="height: 40px;width: 100px;margin: 10px;"> Обновить</button>
+    </div>
+    
+</div>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+<script src="~/js/moment.min.js" asp-append-version="true"></script>
+
+    <script>
+
+    var format = "DD.MM.YYYY H:mm:ss";
+
+    $("#btnReload").click(function () {
+
+            $.ajax({
+                type: "GET",
+
+                url: "@Url.Action("GetMessages", "Message")",
+
+                data: {},
+                success: function (data) {
+
+                    $("#tblBody").empty();
+                    $("#tblFoot").empty();
+                    if (data.length > 0) {
+                        for (var i = 0; i < data.length; i++) {
+                            $("#tblBody").append("<tr>" +
+                                "<td  style='width: 10% '> " + data[i].Id + "</td>" +
+                                "<td  style=\"width: 10% \">" + data[i].Number + "</td>" +
+                            "<td  style=\"width: 20% \">" + moment.utc(data[i].ArrivalTime).format(format) + "</td>" +
+                                "<td  style=\"width: 60% \"><span style=\"display:flex; max-width: 750px; overflow:hidden; \">"
+                                + data[i].Kontent +
+                                "</span></td>" +
+                                "</tr>");
+                        }
+
+                        $("#tblFoot").append(
+                            "<tr><td style='width: 100px;'>" + "Всего сообщений: " + data.length + "</td></tr>"
+
+                        );
+                    
+                    }
+                },
+                error: function (er) {
+                    $("#tblBody").empty();
+                }
+            });
+        });
+
+    </script>
+
+

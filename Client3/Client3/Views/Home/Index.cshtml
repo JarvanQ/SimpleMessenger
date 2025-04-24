@@ -1,0 +1,45 @@
+﻿
+@using BusinessLogic.DTO;
+@model MessagesViewModel;
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@{
+    await Html.RenderPartialAsync("_GetMessage",Model);
+}
+
+
+@* @section Scripts {
+
+    <script>
+
+        alert("Привет мир");
+    </script>
+
+} *@
+
+
+@* <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".delete").click(function (e) {
+           
+            $.ajax({
+                type: "POST",
+                url: "@Url.Action("Delete")",
+                data: { id: id },
+                dataType: "text",
+                success: function (result, status, xhr) {
+                    if (result == "success")
+                        parent.hide("slow");
+                    else
+                        alert(result);
+                },
+                error: function (xhr, status, error) {
+                    console.log("Result: " + status + " " + error + " " + xhr.status + " " + xhr.statusText)
+                }
+            });
+        });
+    });
+</script> *@
