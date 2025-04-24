@@ -1,0 +1,8 @@
+2025-04-24 20:25:14.7646|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using '/home/app/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-24 20:25:14.8150|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Creating key {2bbe884b-e429-49b0-8d83-aee2dbbd5beb} with creation date 2025-04-24 20:25:14Z, activation date 2025-04-24 20:25:14Z, and expiration date 2025-07-23 20:25:14Z.
+2025-04-24 20:25:14.8395|INFO|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Writing data to file '/home/app/.aspnet/DataProtection-Keys/key-2bbe884b-e429-49b0-8d83-aee2dbbd5beb.xml'.
+2025-04-24 20:25:14.9201|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:8080
+2025-04-24 20:25:14.9201|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2025-04-24 20:25:14.9201|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2025-04-24 20:25:14.9201|INFO|Microsoft.Hosting.Lifetime|Content root path: /app
+2025-04-24 20:26:00.2083|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...

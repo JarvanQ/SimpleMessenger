@@ -1,0 +1,3 @@
+2025-04-24 20:25:14.6491|TRACE|Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher|'ChatHub' hub method 'SendMessage' is bound.
+2025-04-24 20:25:14.9201|TRACE|Microsoft.AspNetCore.Http.Connections.Internal.HttpConnectionManager|Starting connection heartbeat.
+2025-04-24 20:26:00.2083|TRACE|Microsoft.AspNetCore.Http.Connections.Internal.HttpConnectionManager|Ending connection heartbeat.

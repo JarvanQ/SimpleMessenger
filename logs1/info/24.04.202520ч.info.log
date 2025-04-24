@@ -1,0 +1,52 @@
+2025-04-24 20:18:00.0032|INFO|MessengerServiceWS|Подключаемся к WS
+2025-04-24 20:18:00.1913|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:8080
+2025-04-24 20:18:00.1913|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2025-04-24 20:18:00.1913|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2025-04-24 20:18:00.1913|INFO|Microsoft.Hosting.Lifetime|Content root path: /app
+2025-04-24 20:18:20.3317|INFO|BusinessLogic.Services.WebSocketService|Отправка сообщения
+2025-04-24 20:18:20.3353|INFO|MessengerServiceWS|Получили сообщение от ws://ws_container:8080/ws/sender.
+2025-04-24 20:18:40.3490|INFO|BusinessLogic.Services.WebSocketService|Отправка сообщения
+2025-04-24 20:18:40.3490|INFO|MessengerServiceWS|Получили сообщение от ws://ws_container:8080/ws/sender.
+2025-04-24 20:19:00.3576|INFO|BusinessLogic.Services.WebSocketService|Отправка сообщения
+2025-04-24 20:19:00.3576|INFO|MessengerServiceWS|Получили сообщение от ws://ws_container:8080/ws/sender.
+2025-04-24 20:19:20.3659|INFO|BusinessLogic.Services.WebSocketService|Отправка сообщения
+2025-04-24 20:19:20.3659|INFO|MessengerServiceWS|Получили сообщение от ws://ws_container:8080/ws/sender.
+2025-04-24 20:19:40.3645|INFO|BusinessLogic.Services.WebSocketService|Отправка сообщения
+2025-04-24 20:19:40.3645|INFO|MessengerServiceWS|Получили сообщение от ws://ws_container:8080/ws/sender.
+2025-04-24 20:20:00.3733|INFO|BusinessLogic.Services.WebSocketService|Отправка сообщения
+2025-04-24 20:20:00.3733|INFO|MessengerServiceWS|Получили сообщение от ws://ws_container:8080/ws/sender.
+2025-04-24 20:20:20.3697|INFO|BusinessLogic.Services.WebSocketService|Отправка сообщения
+2025-04-24 20:20:20.3697|INFO|MessengerServiceWS|Получили сообщение от ws://ws_container:8080/ws/sender.
+2025-04-24 20:20:40.3684|INFO|BusinessLogic.Services.WebSocketService|Отправка сообщения
+2025-04-24 20:20:40.3684|INFO|MessengerServiceWS|Получили сообщение от ws://ws_container:8080/ws/sender.
+2025-04-24 20:21:00.3673|INFO|BusinessLogic.Services.WebSocketService|Отправка сообщения
+2025-04-24 20:21:00.3673|INFO|MessengerServiceWS|Получили сообщение от ws://ws_container:8080/ws/sender.
+2025-04-24 20:21:20.3795|INFO|BusinessLogic.Services.WebSocketService|Отправка сообщения
+2025-04-24 20:21:20.3795|INFO|MessengerServiceWS|Получили сообщение от ws://ws_container:8080/ws/sender.
+2025-04-24 20:21:40.3774|INFO|BusinessLogic.Services.WebSocketService|Отправка сообщения
+2025-04-24 20:21:40.3774|INFO|MessengerServiceWS|Получили сообщение от ws://ws_container:8080/ws/sender.
+2025-04-24 20:22:00.3726|INFO|BusinessLogic.Services.WebSocketService|Отправка сообщения
+2025-04-24 20:22:00.3726|INFO|MessengerServiceWS|Получили сообщение от ws://ws_container:8080/ws/sender.
+2025-04-24 20:22:02.3656|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2025-04-24 20:23:15.9117|INFO|MessengerServiceWS|Подключаемся к WS
+2025-04-24 20:23:16.0160|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:8080
+2025-04-24 20:23:16.0177|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2025-04-24 20:23:16.0177|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2025-04-24 20:23:16.0177|INFO|Microsoft.Hosting.Lifetime|Content root path: /app
+2025-04-24 20:23:36.1381|INFO|BusinessLogic.Services.WebSocketService|Отправка сообщения
+2025-04-24 20:23:36.1381|INFO|MessengerServiceWS|Получили сообщение от ws://ws_container:8080/ws/sender.
+2025-04-24 20:23:56.1603|INFO|BusinessLogic.Services.WebSocketService|Отправка сообщения
+2025-04-24 20:23:56.1603|INFO|MessengerServiceWS|Получили сообщение от ws://ws_container:8080/ws/sender.
+2025-04-24 20:24:16.1649|INFO|BusinessLogic.Services.WebSocketService|Отправка сообщения
+2025-04-24 20:24:16.1649|INFO|MessengerServiceWS|Получили сообщение от ws://ws_container:8080/ws/sender.
+2025-04-24 20:24:19.1869|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2025-04-24 20:25:14.8645|INFO|MessengerServiceWS|Подключаемся к WS
+2025-04-24 20:25:14.9784|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:8080
+2025-04-24 20:25:14.9799|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2025-04-24 20:25:14.9799|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2025-04-24 20:25:14.9799|INFO|Microsoft.Hosting.Lifetime|Content root path: /app
+2025-04-24 20:25:35.0755|INFO|BusinessLogic.Services.WebSocketService|Отправка сообщения
+2025-04-24 20:25:35.0755|INFO|MessengerServiceWS|Получили сообщение от ws://ws_container:8080/ws/sender.
+2025-04-24 20:25:55.0862|INFO|BusinessLogic.Services.WebSocketService|Отправка сообщения
+2025-04-24 20:25:55.0862|INFO|MessengerServiceWS|Получили сообщение от ws://ws_container:8080/ws/sender.
+2025-04-24 20:26:00.1697|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...

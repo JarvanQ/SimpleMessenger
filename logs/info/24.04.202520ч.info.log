@@ -1,0 +1,45 @@
+2025-04-24 20:17:59.1375|INFO|DatabaseService|Повторная попытка создать БД
+2025-04-24 20:17:59.1826|INFO|DatabaseService|Таблица messages есть
+2025-04-24 20:17:59.5332|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:8080
+2025-04-24 20:17:59.5332|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2025-04-24 20:17:59.5332|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2025-04-24 20:17:59.5332|INFO|Microsoft.Hosting.Lifetime|Content root path: /app
+2025-04-24 20:18:00.1928|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://ws_container:8080/ws/sender - - -
+2025-04-24 20:18:00.2856|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint '/ws/sender'
+2025-04-24 20:18:00.5233|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://ws_container:8080/ws/subscriber - - -
+2025-04-24 20:18:00.5233|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint '/ws/subscriber'
+2025-04-24 20:22:02.4607|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint '/ws/sender'
+2025-04-24 20:22:02.4907|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://ws_container:8080/ws/sender - 101 - - 242312.9777ms
+2025-04-24 20:22:12.4368|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint '/ws/subscriber'
+2025-04-24 20:22:12.4368|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://ws_container:8080/ws/subscriber - 101 - - 251932.0815ms
+2025-04-24 20:22:12.9195|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2025-04-24 20:23:15.3973|INFO|DatabaseService|Повторная попытка создать БД
+2025-04-24 20:23:15.4357|INFO|DatabaseService|Таблица messages есть
+2025-04-24 20:23:15.7164|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:8080
+2025-04-24 20:23:15.7164|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2025-04-24 20:23:15.7164|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2025-04-24 20:23:15.7164|INFO|Microsoft.Hosting.Lifetime|Content root path: /app
+2025-04-24 20:23:16.0212|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://ws_container:8080/ws/sender - - -
+2025-04-24 20:23:16.0212|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://ws_container:8080/ws/subscriber - - -
+2025-04-24 20:23:16.0882|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint '/ws/sender'
+2025-04-24 20:23:16.0882|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint '/ws/subscriber'
+2025-04-24 20:24:19.2732|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint '/ws/sender'
+2025-04-24 20:24:19.3125|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://ws_container:8080/ws/sender - 101 - - 63294.7870ms
+2025-04-24 20:24:29.1939|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint '/ws/subscriber'
+2025-04-24 20:24:29.1939|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://ws_container:8080/ws/subscriber - 101 - - 73180.7630ms
+2025-04-24 20:24:29.7340|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2025-04-24 20:25:14.1852|INFO|DatabaseService|Повторная попытка создать БД
+2025-04-24 20:25:14.2321|INFO|DatabaseService|Таблица messages есть
+2025-04-24 20:25:14.5913|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:8080
+2025-04-24 20:25:14.5913|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2025-04-24 20:25:14.5913|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2025-04-24 20:25:14.5913|INFO|Microsoft.Hosting.Lifetime|Content root path: /app
+2025-04-24 20:25:14.9493|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://ws_container:8080/ws/subscriber - - -
+2025-04-24 20:25:14.9826|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://ws_container:8080/ws/sender - - -
+2025-04-24 20:25:15.0198|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint '/ws/subscriber'
+2025-04-24 20:25:15.0198|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint '/ws/sender'
+2025-04-24 20:26:00.2574|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint '/ws/sender'
+2025-04-24 20:26:00.3042|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://ws_container:8080/ws/sender - 101 - - 45321.1195ms
+2025-04-24 20:26:10.2412|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint '/ws/subscriber'
+2025-04-24 20:26:10.2412|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://ws_container:8080/ws/subscriber - 101 - - 55298.7772ms
+2025-04-24 20:26:10.7496|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...

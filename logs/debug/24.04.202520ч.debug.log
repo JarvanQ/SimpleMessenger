@@ -1,0 +1,82 @@
+2025-04-24 20:17:59.3219|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-04-24 20:17:59.3705|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2025-04-24 20:17:59.5332|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Messenger.API
+2025-04-24 20:17:59.5332|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2025-04-24 20:18:00.1548|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNC3DKE0J553" accepted.
+2025-04-24 20:18:00.1548|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNC3DKE0J553" started.
+2025-04-24 20:18:00.1928|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2025-04-24 20:18:00.2231|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/ws/sender'
+2025-04-24 20:18:00.2231|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint '/ws/sender'
+2025-04-24 20:18:00.2746|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2025-04-24 20:18:00.2746|DEBUG|Microsoft.AspNetCore.Rewrite.RewriteMiddleware|Request is continuing in applying rules. Current url is http://ws_container:8080/ws/sender
+2025-04-24 20:18:00.5146|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNC3DKE0J554" accepted.
+2025-04-24 20:18:00.5146|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNC3DKE0J554" started.
+2025-04-24 20:18:00.5233|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/ws/subscriber'
+2025-04-24 20:18:00.5233|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint '/ws/subscriber'
+2025-04-24 20:18:00.5233|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2025-04-24 20:18:00.5233|DEBUG|Microsoft.AspNetCore.Rewrite.RewriteMiddleware|Request is continuing in applying rules. Current url is http://ws_container:8080/ws/subscriber
+2025-04-24 20:22:02.4482|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNC3DKE0J553" received FIN.
+2025-04-24 20:22:02.4716|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNC3DKE0J553" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-04-24 20:22:02.4716|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNC3DKE0J553" disconnecting.
+2025-04-24 20:22:02.4932|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNC3DKE0J553" stopped.
+2025-04-24 20:22:12.4368|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNC3DKE0J554" received FIN.
+2025-04-24 20:22:12.4368|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNC3DKE0J554" disconnecting.
+2025-04-24 20:22:12.4368|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNC3DKE0J554" stopped.
+2025-04-24 20:22:12.4420|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNC3DKE0J554" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-04-24 20:22:12.9195|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping
+2025-04-24 20:22:12.9330|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped
+2025-04-24 20:23:15.6225|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-04-24 20:23:15.6662|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2025-04-24 20:23:15.7164|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Messenger.API
+2025-04-24 20:23:15.7164|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2025-04-24 20:23:15.9825|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNC3DNC4I594" accepted.
+2025-04-24 20:23:15.9825|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNC3DNC4I595" accepted.
+2025-04-24 20:23:15.9825|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNC3DNC4I594" started.
+2025-04-24 20:23:16.0070|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNC3DNC4I595" started.
+2025-04-24 20:23:16.0212|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2025-04-24 20:23:16.0212|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2025-04-24 20:23:16.0531|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/ws/subscriber'
+2025-04-24 20:23:16.0531|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint '/ws/subscriber'
+2025-04-24 20:23:16.0531|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/ws/sender'
+2025-04-24 20:23:16.0662|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint '/ws/sender'
+2025-04-24 20:23:16.0850|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2025-04-24 20:23:16.0850|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2025-04-24 20:23:16.0882|DEBUG|Microsoft.AspNetCore.Rewrite.RewriteMiddleware|Request is continuing in applying rules. Current url is http://ws_container:8080/ws/subscriber
+2025-04-24 20:23:16.0882|DEBUG|Microsoft.AspNetCore.Rewrite.RewriteMiddleware|Request is continuing in applying rules. Current url is http://ws_container:8080/ws/sender
+2025-04-24 20:24:19.2703|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNC3DNC4I595" received FIN.
+2025-04-24 20:24:19.2703|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNC3DNC4I595" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-04-24 20:24:19.2732|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNC3DNC4I595" disconnecting.
+2025-04-24 20:24:19.3144|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNC3DNC4I595" stopped.
+2025-04-24 20:24:29.1939|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNC3DNC4I594" received FIN.
+2025-04-24 20:24:29.1939|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNC3DNC4I594" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-04-24 20:24:29.1939|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNC3DNC4I594" disconnecting.
+2025-04-24 20:24:29.1939|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNC3DNC4I594" stopped.
+2025-04-24 20:24:29.7340|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping
+2025-04-24 20:24:29.7432|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped
+2025-04-24 20:25:14.3721|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-04-24 20:25:14.4837|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2025-04-24 20:25:14.5913|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Messenger.API
+2025-04-24 20:25:14.5913|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2025-04-24 20:25:14.8987|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNC3DOFIKH08" accepted.
+2025-04-24 20:25:14.8994|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNC3DOFIKH08" started.
+2025-04-24 20:25:14.9493|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNC3DOFIKH09" accepted.
+2025-04-24 20:25:14.9493|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2025-04-24 20:25:14.9705|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNC3DOFIKH09" started.
+2025-04-24 20:25:14.9826|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/ws/sender'
+2025-04-24 20:25:14.9826|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/ws/subscriber'
+2025-04-24 20:25:14.9826|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint '/ws/subscriber'
+2025-04-24 20:25:14.9826|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint '/ws/sender'
+2025-04-24 20:25:15.0163|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2025-04-24 20:25:15.0163|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2025-04-24 20:25:15.0198|DEBUG|Microsoft.AspNetCore.Rewrite.RewriteMiddleware|Request is continuing in applying rules. Current url is http://ws_container:8080/ws/sender
+2025-04-24 20:25:15.0198|DEBUG|Microsoft.AspNetCore.Rewrite.RewriteMiddleware|Request is continuing in applying rules. Current url is http://ws_container:8080/ws/subscriber
+2025-04-24 20:26:00.2549|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNC3DOFIKH09" received FIN.
+2025-04-24 20:26:00.2574|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNC3DOFIKH09" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-04-24 20:26:00.2574|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNC3DOFIKH09" disconnecting.
+2025-04-24 20:26:00.3071|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNC3DOFIKH09" stopped.
+2025-04-24 20:26:10.2412|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNC3DOFIKH08" received FIN.
+2025-04-24 20:26:10.2412|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNC3DOFIKH08" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-04-24 20:26:10.2412|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNC3DOFIKH08" disconnecting.
+2025-04-24 20:26:10.2412|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNC3DOFIKH08" stopped.
+2025-04-24 20:26:10.7496|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping
+2025-04-24 20:26:10.7592|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped

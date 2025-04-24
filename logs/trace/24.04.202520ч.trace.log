@@ -1,0 +1,12 @@
+2025-04-24 20:18:00.1928|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2025-04-24 20:18:00.2231|TRACE|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|The endpoint does not specify the IRequestSizeLimitMetadata.
+2025-04-24 20:18:00.5233|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2025-04-24 20:18:00.5233|TRACE|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|The endpoint does not specify the IRequestSizeLimitMetadata.
+2025-04-24 20:23:16.0212|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2025-04-24 20:23:16.0212|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2025-04-24 20:23:16.0531|TRACE|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|The endpoint does not specify the IRequestSizeLimitMetadata.
+2025-04-24 20:23:16.0662|TRACE|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|The endpoint does not specify the IRequestSizeLimitMetadata.
+2025-04-24 20:25:14.9493|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2025-04-24 20:25:14.9826|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2025-04-24 20:25:14.9826|TRACE|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|The endpoint does not specify the IRequestSizeLimitMetadata.
+2025-04-24 20:25:14.9826|TRACE|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|The endpoint does not specify the IRequestSizeLimitMetadata.
