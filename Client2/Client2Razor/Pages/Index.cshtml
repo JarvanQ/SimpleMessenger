@@ -1,0 +1,126 @@
+﻿@page
+@using Client2Razor.Pages
+@model IndexModel
+@{
+    ViewData["Title"] = "Client #2";
+}
+
+<div class="text-center">
+   
+    <div class="text-center">
+    <table style='width:1295px; '>
+        <thead >
+            <tr >
+                <th style="width:10%">
+                    @Html.DisplayNameFor(model => model.message.Id)
+                </th>
+                <th style="width:10%">
+                        @Html.DisplayNameFor(model => model.message.Number)
+                </th>
+                <th style="width:20%">
+                        @Html.DisplayNameFor(model => model.message.ArrivalTime)
+                </th>
+                <th style="width:60%">
+                        @Html.DisplayNameFor(model => model.message.Kontent)
+                </th>
+            </tr>
+        </thead>
+        <tbody id="tblBody">
+           
+        </tbody>
+        <tfoot id="tblFoot" style='width:1295px;display: table;'>
+           
+        </tfoot>
+    </table>
+
+    
+</div>
+
+
+</div>
+
+<script src="~/js/moment.min.js" asp-append-version="true"></script>
+<script src="~/js/signalr.js" asp-append-version="true"></script>
+@* <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/6.0.1/signalr.js"></script> *@
+<script>
+
+    function Queue(length) {
+        this.length = length;
+        this.data = [];
+        this.data.length = length;
+        this.print = function () {
+            console.log(`Name: ${this.name}  Age: ${this.age}`);
+        };
+
+        this.enqueue = function(newMessage) 
+        {
+            this.data.push(newMessage);
+        }
+
+        this.dequeue = function() {
+            this.data.shift();
+        }
+    }
+
+    var format = "DD.MM.YYYY H:mm:ss";
+    const messagesQueue = new Queue(26);
+
+    const hubConnection = new signalR.HubConnectionBuilder()
+        .withUrl("/chat")
+        .build();
+
+
+    hubConnection.on("Receive", message => {
+        var d = message;
+        messagesQueue.dequeue()
+        messagesQueue.enqueue(message);
+        refreshMessagesTable(messagesQueue);
+    });
+
+    hubConnection.start()
+        .then(() => console.info("ok"))
+        .catch((err) => console.error(err));
+
+
+    function refreshMessagesTable(data) 
+    {
+        $("#tblBody").empty();
+        $("#tblFoot").empty();
+
+        if (data.length > 0) {
+            var counter = 0;
+            for (var i = 0; i < data.length; i++) {
+                
+                if (data.data[i]) {
+                    counter++;
+                    $("#tblBody").append("<tr>" +
+                        "<td  style='width: 10% '> " + data.data[i].Id + "</td>" +
+                        "<td  style=\"width: 10% \">" + data.data[i].Number + "</td>" +
+                        "<td  style=\"width: 20% \">" + moment.utc(data.data[i].ArrivalTime).format(format) + "</td>" +
+                        "<td  style=\"width: 60% \"><span style=\"display:flex; max-width: 750px; overflow:hidden; \">"
+                        + data.data[i].Kontent +
+                        "</span></td>" +
+                        "</tr>");
+                }
+
+            }
+
+            $("#tblFoot").append(
+                "<tr><td style='width: 100px;'>" + "Всего сообщений: " + counter + "</td></tr>"
+
+            );
+
+        }
+
+
+    }
+
+
+
+
+    
+
+
+
+</script>
+
