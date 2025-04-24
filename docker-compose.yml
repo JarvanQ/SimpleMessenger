@@ -1,0 +1,138 @@
+
+networks:
+  messenger-network:
+    driver: bridge
+    
+volumes:
+  sql-data:
+  pgadmin-data:
+  
+
+services:
+  
+  pg:
+      container_name: postgres_container
+      image: postgres:16.1
+      ports:
+      - 5432:5432
+      restart: on-failure
+      environment:
+         - POSTGRES_DB=db
+         - POSTGRES_USER=postgres
+         - POSTGRES_PASSWORD=postgres
+         - POSTGRES_HOST_AUTH_METHOD=trust
+         - PGDATA=/var/lib/postgresql/data/pgdata
+      volumes:
+      - sql-data:/var/opt/mssql
+      networks:
+        - messenger-network
+   
+  pgadmin:
+      container_name: pgadmin_container
+      image: dpage/pgadmin4:7.2
+      environment:
+          - PGADMIN_DEFAULT_EMAIL=habrpguser@habr.com
+          - PGADMIN_DEFAULT_PASSWORD=pgadminpwd4habr"
+          - PGADMIN_CONFIG_SERVER_MODE=False
+      volumes:
+      - pgadmin-data:/var/lib/pgadmin
+      ports:
+      - "5050:80"
+      restart: unless-stopped
+      deploy:
+        resources:
+          limits:
+            cpus: '0.5'
+            memory: 1G
+      networks:
+        - messenger-network
+      depends_on:
+        - pg
+        - messenger_api
+
+  messenger_api:
+    image: ${DOCKER_REGISTRY-}messengerapi
+    container_name: ws_container
+    build:
+      context: Messenger
+      dockerfile: Dockerfile
+    environment:
+         ServerConnection: "Host=pg;Port=5432;Database=db;Username=postgres;Password=postgres"
+         DbConnection: "Host=pg;Port=5432;Database=testdb;Username=postgres;Password=postgres"
+         LogsPath: "/app/mylogs"
+    volumes:
+      - ./logs:/app/mylogs
+    ports:
+      - "5080:8080"
+    restart: on-failure
+    networks:
+        - messenger-network
+    depends_on:
+      - pg
+ 
+  client1:
+    image: ${DOCKER_REGISTRY-}client1
+    container_name: client1_container
+    build:
+        context: Client1
+        dockerfile: Dockerfile
+    environment:
+         ServerWsUrl: "ws://ws_container:8080/ws/sender"
+         LogsPath: "/app/mylogs"
+    volumes:
+      - ./logs1:/app/mylogs
+    ports:
+        - "5081:8080"
+    restart: on-failure
+    networks:
+        - messenger-network
+    depends_on:
+        - pg
+        - messenger_api
+        
+  client2:
+    image: ${DOCKER_REGISTRY-}client2
+    container_name: client2_container
+    build:
+        context: Client2
+        dockerfile: Dockerfile
+    environment:
+         ServerWsUrl: "ws://ws_container:8080/ws/subscriber"
+         LogsPath: "/app/mylogs"
+    volumes:
+      - ./logs2:/app/mylogs         
+    ports:
+        - "5082:8080"
+    restart: on-failure
+    networks:
+        - messenger-network
+    depends_on:
+        - pg
+        - messenger_api
+        
+  client3:
+    image: ${DOCKER_REGISTRY-}client3
+    container_name: client3_container
+    build:
+        context: Client3
+        dockerfile: Dockerfile
+    environment:
+         ServerHttpUrl: "http://ws_container:8080"
+         LogsPath: "/app/mylogs"
+    volumes:
+      - ./logs3:/app/mylogs         
+    ports:
+        - "5083:8080"
+    restart: on-failure
+    networks:
+        - messenger-network
+    depends_on:
+        - pg
+        - messenger_api
+        
+        
+        
+        
+  
+ 
+
