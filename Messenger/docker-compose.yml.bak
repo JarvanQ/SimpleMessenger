@@ -1,0 +1,11 @@
+
+
+services:
+  messenger.api:
+    image: ${DOCKER_REGISTRY-}messengerapi
+    container_name: WS_container
+    build:
+      context: .
+      dockerfile: Messenger.API/Dockerfile
+    ports:
+      - "8080:8080"
