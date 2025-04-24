@@ -1,0 +1,25 @@
+2025-04-24 19:08:26.4171|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2025-04-24 19:08:26.9360|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Client1
+2025-04-24 19:08:26.9360|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2025-04-24 19:10:59.6046|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping
+2025-04-24 19:10:59.6206|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped
+2025-04-24 19:11:06.6572|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2025-04-24 19:11:06.9210|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Client1
+2025-04-24 19:11:06.9210|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2025-04-24 19:12:57.6110|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping
+2025-04-24 19:12:57.6406|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped
+2025-04-24 19:17:53.9610|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2025-04-24 19:17:54.1375|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Client1
+2025-04-24 19:17:54.1375|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2025-04-24 19:23:15.4346|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping
+2025-04-24 19:23:15.4470|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped
+2025-04-24 19:23:33.5825|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2025-04-24 19:23:33.8498|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Client1
+2025-04-24 19:23:33.8498|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2025-04-24 19:29:01.6120|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping
+2025-04-24 19:29:01.6373|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped
+2025-04-24 19:35:04.8762|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2025-04-24 19:35:05.2176|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Client1
+2025-04-24 19:35:05.2176|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2025-04-24 19:36:27.9398|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping
+2025-04-24 19:36:27.9525|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped
